@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+<div id="my-spa1" asp-prerender-module="wwwroot/boot-server" asp-prerender-data="new {
+                    IsGoldUser = true,
+                    Cookies = ViewContext.HttpContext.Request.Cookies
+                 }"></div>
+<hr />
+<div id="my-spa2" asp-prerender-module="wwwroot/boot-server" asp-prerender-data="new {
+                    IsGoldUser = true,
+                    Cookies = ViewContext.HttpContext.Request.Cookies
+                 }"></div>
+
+<hr />
+<div id="my-spa3" asp-prerender-module="wwwroot/boot-server" asp-prerender-data="new {
+                    IsGoldUser = true,
+                    Cookies = ViewContext.HttpContext.Request.Cookies
+                 }"></div>
+
+<hr />
+<div id="my-spa4" asp-prerender-module="wwwroot/boot-server" asp-prerender-data="new {
+                    IsGoldUser = true,
+                    Cookies = ViewContext.HttpContext.Request.Cookies
+                 }"></div>
